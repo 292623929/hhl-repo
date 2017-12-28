@@ -1,0 +1,299 @@
+<!--Created by demon on 2017/4/21 0021.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>掌上回坊运营数据分析</title>
+    <link rel="stylesheet" href="../css/huiFangData.css">
+</head>
+<body>
+
+<!--顶部开始-->
+<div class="backhead">
+    <img src="../img/backmanage/backlogo.png" alt="" class="back-l">
+    <img src="../img/backmanage/backtopr.png" alt="" class="back-r">
+    <div class="admin-wrapper">
+        <img src="../img/backmanage/logo.jpg" alt="头像">
+        <div class="admin-name">云创科技</div>
+        <div class="admin-menu">
+            <ul>
+                <li>个人资料</li>
+                <li>修改密码</li>
+                <li>退出登录</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--顶部结束-->
+
+<!--内容区开始-->
+<div class="content-wrapper">
+    <h4 class="title">掌上回坊实时运营数据</h4>
+    <h5 class="open-time">获取时间：<span></span></h5>
+    <!--概述开始-->
+    <div class="summary-box">
+        <div class="item">
+            <p>用户总数量</p>
+            <p class="userCount"></p>
+        </div>
+        <div class="item">
+            <p>产品总数量</p>
+            <p class="proCount"></p>
+        </div>
+        <div class="item">
+            <p>订单总数量</p>
+            <p class="orderCount"></p>
+        </div>
+        <div class="item">
+            <p>扫码交易数量</p>
+            <p class="dealCount"></p>
+        </div>
+        <div class="item">
+            <p>商户数量</p>
+            <p class="commerCount"></p>
+        </div>
+        <div class="item">
+            <p>待审核商户</p>
+            <p class="checkCount"></p>
+        </div>
+    </div>
+    <!--概述结束-->
+
+    <!--邮寄 开始-->
+    <div class="map-box">
+        <h4>订单邮寄发往地域分布</h4>
+        <!--左边地图-->
+        <div class="post-chart-box" id="post-chart-left"></div>
+        <!--右边图表-->
+        <div class="post-chart-right" id="post-chart-right">
+            <div class="filter-date">
+                <button type="1" class="today active">省份</button>
+                <button type="2" class="today">城市</button>
+            </div>
+            <div id="post-chart-right-zhu" style="width: 100%; height: 500px;"></div>
+        </div>
+
+    </div>
+    <!--邮寄 结束-->
+
+    <!--总交易金额查询 开始-->
+    <div class="total-amount-box">
+        <h4>总交易金额查询</h4>
+        <div class="filter-box">
+            <div class="filter-date">
+                <button type="1" class="today active">今日</button>
+                <button type="2" class="today">近7日</button>
+                <button type="3" class="today">月</button>
+                <!--<button class="today">自定义</button>-->
+            </div>
+            <div class="filter-type">
+                <select name="" id="">
+                    <option value="1">按金额</option>
+                    <option value="2">按订单数</option>
+                </select>
+            </div>
+        </div>
+        <!--图表 开始-->
+        <div class="chart-box">
+            <div class="chart-zhexian" id="total-amount-chart">
+
+            </div>
+            <div class="chart-shanxing" id="total-amount-chart-bingtu">
+
+            </div>
+        </div>
+        <!--图表 结束-->
+
+    </div>
+    <!--总交易金额查询 结束-->
+
+    <!--支付通道查询 开始-->
+    <div class="pay-box">
+        <h4>支付通道查询</h4>
+        <div class="filter-box">
+            <div class="filter-date">
+                <button type="1" class="today active">今日</button>
+                <button type="2" class="today">近7日</button>
+                <button type="3" class="today">月</button>
+                <!--<button class="today">自定义</button>-->
+            </div>
+            <div class="filter-type">
+                <select name="">
+                    <option value="1">按金额</option>
+                    <option value="2">按订单数</option>
+                </select>
+            </div>
+        </div>
+        <!--图表 开始-->
+        <div class="chart-box">
+            <div class="chart-zhexian" id="pay-box-chart-left">
+
+            </div>
+            <div class="chart-shanxing" id="pay-box-chart-bing">
+
+            </div>
+        </div>
+        <!--图表 结束-->
+
+    </div>
+    <!--支付通道查询 结束-->
+
+    <!--用户分析 开始-->
+    <div class="user-box">
+        <h4>用户分析</h4>
+        <div class="filter-box">
+            <div class="filter-date">
+                <!--<button class="today active">今日</button>-->
+                <!--<button class="today">近7日</button>-->
+                <!--<button class="today">月</button>-->
+                <!--<button class="today">自定义</button>-->
+            </div>
+        </div>
+        <!--新增用户 开始-->
+        <div class="chart-add-box">
+            <h5>新增用户和累计用户关系图</h5>
+            <div class="chart-zhexian" id="user-box-Chart">
+
+            </div>
+
+            <!--<div class="chart-shanxing">
+
+            </div>-->
+
+        </div>
+        <!--新增用户 结束-->
+
+        <!--累计用户 开始-->
+        <!--<div class="chart-total-box">
+            <h5>新增用户</h5>
+            <div class="chart-zhexian">
+
+            </div>
+            <div class="chart-shanxing">
+
+            </div>
+        </div>-->
+        <!--累计用户 结束-->
+
+    </div>
+    <!--用户分析 结束-->
+
+    <!--热销产品排行 开始-->
+    <div class="hot-product-box">
+        <h4>热销产品排行</h4>
+        <div class="filter-box">
+            <div class="filter-date">
+                <button type = "1" class="today active">今日</button>
+                <button type = "2" class="today">近7日</button>
+                <button type = "3" class="today">近30日</button>
+                <!--<button class="today">自定义</button>-->
+            </div>
+        </div>
+        <!--图表 开始-->
+        <div class="chart-box">
+            <table border="1">
+                <thead>
+                <tr>
+                    <th style="width: 40%;">产品名称</th>
+                    <th style="width: 15%;">销售件数</th>
+                    <th style="width: 15%;">订单量</th>
+                    <th style="width: 15%;">交易总金额</th>
+                    <th style="width: 15%;">估算利润</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+        </div>
+        <!--图表 结束-->
+
+    </div>
+    <!--热销产品排行 结束-->
+
+    <!--商户收入排行 开始-->
+    <div class="seller-income-box">
+        <h4>商户收入排行</h4>
+        <div class="filter-box">
+            <div class="filter-date">
+                <button type = "1" class="today active">今日</button>
+                <button type = "2" class="today">近7日</button>
+                <button type = "3" class="today">近30日</button>
+                <!--<button class="today">自定义</button>-->
+            </div>
+        </div>
+        <!--图表 开始-->
+        <div class="chart-box">
+            <table border="1">
+                <thead>
+                <tr>
+                    <th style="width: 40%;">商户名称</th>
+                    <th style="width: 12%;">总收入金额</th>
+                    <th style="width: 12%;">商城订单量</th>
+                    <th style="width: 12%;">商城订单金额</th>
+                    <th style="width: 12%;">扫码交易数量</th>
+                    <th style="width: 12%;">扫码交易金额</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>产品名称</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>产品名称</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>产品名称</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>产品名称</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>产品名称</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                    <td>123</td>
+                </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+        <!--图表 结束-->
+
+    </div>
+    <!--商户收入排行 结束-->
+
+</div>
+<!--内容区结束-->
+
+<script src="../js/script/jquery-1.10.2.min.js"></script>
+<script src="../js/script/echarts.js"></script>
+<script src="http://gallery.echartsjs.com/dep/echarts/map/js/china.js" charset="UTF-8"></script>
+
+<script src="../js/huiFangData.js"></script>
+</body>
+</html>

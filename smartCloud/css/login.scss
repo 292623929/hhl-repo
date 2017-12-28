@@ -1,0 +1,152 @@
+@import "font";
+@import "common";
+
+html, body{
+  height: 100%;
+}
+
+.login-wrapper{
+  width: 100%;
+  height: 100%;
+  .left{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    min-width: 700px;
+    height: 100%;
+    width: 60%;
+    font-size: 0;
+    background: -webkit-linear-gradient(#51d6bf, #1048ff);
+    background: -o-linear-gradient(#51d6bf, #1048ff);
+    background: -moz-linear-gradient(#51d6bf, #1048ff);
+    background: linear-gradient(#51d6bf, #1048ff);
+    img{
+      position: absolute;
+      bottom: 64px;
+      right: 80px;
+    }
+    .left-content{
+      position: absolute;
+      left: 50%;
+      width: 700px;
+      transform: translate(-50%);
+    }
+    .title{
+      color: $cfff;
+      font-size: $f55;
+      margin: 427px 0 18px 0;
+    }
+    .desc{
+      color: $ccf;
+      font-size: $f18;
+      margin: 0 0 50px 0;
+    }
+    .more{
+      cursor: pointer;
+      font-size: $f16;
+      color: $cfff;
+      height: 40px;
+      width: 150px;
+      line-height: 40px;
+      text-align: center;
+      border: solid 1px rgba(255, 255, 255, 1);
+      background: transparent;
+      @include trans6;
+      &:hover{
+        color: $c23;
+        background-color: $cfff;
+      }
+    }
+  }
+
+  .right{
+    overflow:hidden;
+    height: 100%;
+    min-width: 310px;
+    font-size: 0;
+    position: relative;
+    .content{
+      position: absolute;
+      margin: 0 20px;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      width: 310px;
+      #username-error, #password-error{
+        font-size: $f14;
+        right: 0;
+        position: absolute;
+        top: 20px;
+        color: red;
+      }
+      input:focus{
+        outline: none;
+      }
+      .logo{
+        margin-bottom: 40px;
+      }
+      .contact, .password, .code{
+        height: 59px;
+        width: 310px;
+        border-bottom: 1px solid rgba(221, 224, 235, 1);
+        position: relative;
+        .icon{
+          position: absolute;
+          margin: auto;
+          width: 20px;
+          bottom: 0;
+          top: 0;
+        }
+        input{
+          position: absolute;
+          margin: auto;
+          width: 150px;
+          height: 30px;
+          left: 32px;
+          border: 0;
+          bottom: 0;
+          top: 0;
+        }
+        .codeimg{
+          position: absolute;
+          margin: auto;
+          width: 126px;
+          height: 35px;
+          right: 0;
+          bottom: 0;
+          top: 0;
+        }
+      }
+      .forget{
+        font-size: $f14;
+        color: $c23;
+        margin: 17px 0 22px 0;
+        text-align: right;
+      }
+      button{
+        width: 100%;
+        height: 46px;
+        line-height: 46px;
+        border-radius: 2px;
+        background-color: $c1f;
+        font-size: $f18;
+        color: $cfff;
+      }
+
+      .register{
+        color: $c9A;
+        font-size: $f14;
+        text-align: right;
+        margin-top: 19px;
+        span{
+          color: $c1f;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

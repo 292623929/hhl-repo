@@ -1,0 +1,345 @@
+<!--Created by demon on 2017/4/21 0021.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台</title>
+    <link rel="stylesheet" href="../css/backmanage.css">
+</head>
+<body>
+    <div class="backhead">
+        <img src="../img/backmanage/backlogo.png" alt="" class="back-l">
+        <img src="../img/backmanage/backtopr.png" alt="" class="back-r">
+        <div class="admin-wrapper">
+            <img src="../img/backmanage/logo.jpg" alt="头像">
+            <div class="admin-name">云创科技</div>
+            <div class="admin-menu">
+                <ul>
+                    <li>个人资料</li>
+                    <li>修改密码</li>
+                    <li>退出登录</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper" id="vue">
+        <div class="content-inner">
+            <div class="districts" style="border-bottom: 1px solid #e1e5f0;">
+                <div class="districts-title">已开通服务 <span style="color: #30caa8">7</span></div>
+                <div class="itemslist">
+                    <div class="items">
+                        <div class="items-top items-top01">
+                            <div class="items-title">景区票务系统</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="openjqpw">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top01">
+                            <div class="items-title">官网/微官网直销</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="opengw">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top02 ">
+                            <div class="items-title">产业监测与应急指挥平台</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="opencpjc">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">微信在线商城系统</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="openwxsc">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">小程序点餐系统</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="opendc">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">运营数据分析</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="opensjfx">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top04">
+                            <div class="items-title">陕西旅游网内容管理系统</div>
+                        </div>
+                        <div class="items-butt">
+                            <button class="butt-blue pull-left" @click="opensxly">打开应用</button>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+            <div class="districts">
+                <div class="districts-title">涉旅企业类</div>
+                <div class="itemslist">
+                    <div class="items">
+                        <div class="items-top items-top01">
+                            <div class="items-title">景区票务系统</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="openjqpw">打开应用</button>
+                        </div>
+                    </div>
+                    <!--<div class="items">-->
+                        <!--<div class="items-top items-top01">-->
+                            <!--<div class="items-title">票务分销系统</div>-->
+                            <!--<div class="items-time">免费</div>-->
+                            <!--<div class="items-state items-state-no">未开通</div>-->
+                        <!--</div>-->
+                        <!--<div class="items-butt">-->
+                            <!--<div class="people">432用户已开通</div>-->
+                            <!--<button class="butt-green pull-left">开通服务</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="items">
+                        <div class="items-top items-top01">
+                            <div class="items-title">官网/微官网直销</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="opengw">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top01">
+                            <div class="items-title">OTA平台分销</div>
+                            <div class="items-time">7000元/年</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+            <div class="districts">
+                <div class="districts-title">旅游管理部门</div>
+                <div class="itemslist">
+                    <div class="items">
+                        <div class="items-top items-top02">
+                            <div class="items-title">产业监测与应急指挥平台</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="opencpjc">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top02">
+                            <div class="items-title">舆情监测</div>
+                            <div class="items-time">免费</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top02">
+                            <div class="items-title">游客评价监测</div>
+                            <div class="items-time">3000元/年</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top02">
+                            <div class="items-title">假日运行监测</div>
+                            <div class="items-time">7000元/年</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top02">
+                            <div class="items-title">旅游产业监测</div>
+                            <div class="items-time">7000元/年</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top02">
+                            <div class="items-title">大数据报告</div>
+                            <div class="items-time">3000元/年</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+            <div class="districts" >
+                <div class="districts-title">公众号/小程序/企业微信类</div>
+                <div class="itemslist">
+                    <!--<div class="items">-->
+                        <!--<div class="items-top items-top03">-->
+                            <!--<div class="items-title">公众号票务营销系统</div>-->
+                            <!--<div class="items-time">3000元/年</div>-->
+                            <!--<div class="items-state items-state-no">未开通</div>-->
+                        <!--</div>-->
+                        <!--<div class="items-butt">-->
+                            <!--<div class="people">432用户已开通</div>-->
+                            <!--<button class="butt-green pull-left">开通服务</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">微信在线商城系统</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="openwxsc">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">小程序点餐系统</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="opendc">打开应用</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">小程序智慧导览系统</div>
+                            <div class="items-time">3000元/年</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">企业微信移动办公系统</div>
+                            <div class="items-time">3000元/年</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">公众号连接WIFI</div>
+                            <div class="items-time">3000元/年</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">扫码支付</div>
+                            <div class="items-time">3000元/年</div>
+                            <div class="items-state items-state-no">未开通</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-green pull-left">开通服务</button>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="items-top items-top03">
+                            <div class="items-title">运营数据分析</div>
+                            <div class="items-time">2018-12-12日到期</div>
+                            <div class="items-state">续费</div>
+                        </div>
+                        <div class="items-butt">
+                            <div class="people">432用户已开通</div>
+                            <button class="butt-blue pull-left" @click="opensjfx">打开应用</button>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+            <div class="districts">
+                <div class="districts-title">CMS系统</div>
+                <div class="itemslist">
+                    <div class="items">
+                        <div class="items-top items-top04">
+                            <div class="items-title">陕西旅游网内容管理系统</div>
+                        </div>
+                        <div class="items-butt">
+                            <button class="butt-blue pull-left" @click="opensxly">打开应用</button>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script/jquery-1.10.2.min.js"></script>
+    <script src="../js/script/jquery.cookie.js"></script>
+    <script src="../js/script/vue.js"></script>
+    <script src="../js/backmanage.js"></script>
+</body>
+</html>

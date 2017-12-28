@@ -1,0 +1,38 @@
+/*
+Error: Invalid CSS after "body, html,input": expected selector or at-rule, was "{"
+        on line 11 of font.scss
+
+6: $c5d: #53DBBD;
+7: $cfff: #fff;
+8: $cf1f: #F1F4FF;
+9: $ccf: #C2D2F
+10: 
+11: body, html,input{
+12:   font-family:"microsoft yahei";
+13: }
+
+Backtrace:
+font.scss:11
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:1209:in `expected'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+C:/Ruby192/bin/scss:19:in `load'
+C:/Ruby192/bin/scss:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"body, html,input\": expected selector or at-rule, was \"{\"\A         on line 11 of font.scss\A \A 6: $c5d: #53DBBD;\A 7: $cfff: #fff;\A 8: $cf1f: #F1F4FF;\A 9: $ccf: #C2D2F\A 10: \A 11: body, html,input{\A 12:   font-family:\"microsoft yahei\";\A 13: }"; }

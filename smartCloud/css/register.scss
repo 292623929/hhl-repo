@@ -1,0 +1,94 @@
+@import "font";
+@import "common";
+
+.reg-head{
+  height: 66px;
+  background: $cfff;
+  .reg-inner{
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    img{
+      float: left;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0,-50%);
+      -moz-transform: translate(0,-50%);
+      -ms-transform: translate(0,-50%);
+      -o-transform: translate(0,-50%);
+      transform: translate(0,-50%);
+    }
+    span{
+      float: right;
+      color: $c7a;
+      line-height: 66px;
+      a{
+        cursor: pointer;
+        color: $c1f;
+      }
+    }
+  }
+}
+
+.reg-content{
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #F1F4FF;
+  .content-inner{
+    font-size: 0;
+    width: 1000px;
+    background-color: #fff;
+    padding: 100px 290px;
+    margin: auto;
+    box-sizing: border-box;
+    .title{
+      color: #c2d2ff;
+      font-size: $f16;
+      line-height: $f16;
+      margin-bottom: 14px;
+    }
+    input{
+      height: 40px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 13px;
+      margin-bottom: 20px;
+      font-size: $f14;
+      color: $c23;
+    }
+    .select{
+      height: 40px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      padding-left: 12px;
+      font-size: $f14;
+      color: $c23;
+    }
+    .sendcode{
+      @include butt-skyblue;
+      display: inline-block;
+      width: 125px;
+      height: 41px;
+    }
+    .verifycode{
+      display: inline-block;
+      width: 125px;
+      height: 41px;
+    }
+    .regnow{
+      @include butt-skyblue;
+      width: 100%;
+      margin-top: 50px;
+    }
+    .mb38{
+      margin-bottom: 38px;
+    }
+    .w295{
+      width: 295px;
+    }
+  }
+}

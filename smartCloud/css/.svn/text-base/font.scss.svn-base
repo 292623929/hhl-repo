@@ -1,0 +1,38 @@
+@charset "utf-8";
+//color
+$c23: #262933;
+$c7a: #757A8A;
+$c58d: #585D6D;
+$c1f: #1048FF;
+$c53d: #53DBBD;
+$cfff: #fff;
+$cf1f: #F1F4FF;
+$ccf: #C2D2FF;
+$c9A: #9CA0AA;
+$cd6: #d4d4d6;
+$c53: #526b73;
+$changeTop: #4ac7c6;
+$changeBot: #124cfd;
+$gap: #e1e5f0;
+$cee: #e9effe;
+$cf7: #ff5837;
+$backtop: #223645;
+$menugray: #2e4050;
+
+
+//font-size
+$f12: 12px;
+$f14: 14px;
+$f16: 16px;
+$f18: 18px;
+$f20: 20px;
+$f22: 22px;
+$f24: 24px;
+$f30: 30px;
+$f42: 42px;
+$f55: 55px;
+
+body, html,input{
+  font-family:"microsoft yahei";
+  font-size: 16px;
+}

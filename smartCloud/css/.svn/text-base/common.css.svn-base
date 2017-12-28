@@ -1,0 +1,50 @@
+/* Created by demon on 2017/12/19 0019.*/
+/*reset start*/
+li {
+  list-style: none; }
+
+img {
+  vertical-align: top;
+  border: none; }
+
+body {
+  margin: 0; }
+
+button {
+  border: 0;
+  padding: 0;
+  cursor: pointer; }
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+/*reset end*/
+body {
+  min-width: 1200px; }
+
+a:hover {
+  color: #1048FF;
+  -webkit-transition: color .6s;
+  -moz-transition: color .6s;
+  -ms-transition: color .6s;
+  -o-transition: color .6s;
+  transition: color .6s; }
+
+a {
+  -webkit-transition: color .6s;
+  -moz-transition: color .6s;
+  -ms-transition: color .6s;
+  -o-transition: color .6s;
+  transition: color .6s; }
+
+.bord-w-button {
+  border: 1px solid #fff;
+  height: 33px;
+  width: 118px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 33px;
+  text-align: center; }
+
+/*# sourceMappingURL=common.css.map */

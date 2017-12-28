@@ -1,0 +1,451 @@
+@charset "UTF-8";
+body, html, input {
+  font-family: "microsoft yahei";
+  font-size: 16px; }
+
+/* Created by demon on 2017/12/19 0019.*/
+/*reset start*/
+li {
+  list-style: none; }
+
+img {
+  vertical-align: top;
+  border: none; }
+
+body {
+  margin: 0; }
+
+button {
+  border: 0;
+  padding: 0;
+  cursor: pointer; }
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+/*reset end*/
+.animation-fadeIn {
+  -webkit-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+  animation: fadeIn 1s; }
+
+body {
+  min-width: 1200px; }
+
+a:hover {
+  color: #1048FF;
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -ms-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s; }
+
+a {
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -ms-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s; }
+
+.bord-w-button {
+  border: 1px solid #fff;
+  height: 33px;
+  width: 118px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 33px;
+  text-align: center; }
+  .bord-w-button:hover {
+    color: #262933;
+    background-color: #fff; }
+
+.pull-left {
+  float: left; }
+
+.pull-left {
+  float: right; }
+
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, td {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+a, u, s, del {
+  color: #000;
+  text-decoration: none; }
+
+fieldset, img {
+  border: 0; }
+
+i, em, b {
+  font-style: normal;
+  font-weight: 400; }
+
+li {
+  list-style: none; }
+
+table {
+  border-collapse: collapse; }
+
+/*细线边框*/
+.ind2 {
+  text-indent: 2em; }
+
+/*溢出隐藏出现省略号*/
+.over {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/*让图片垂直对齐方式*/
+/*给valign添加个子元素对齐图片. 当父元素没有设置宽度时,这个行内块元素会有6px的宽度, 如果父元素设置了宽度 这个块元素没有宽度*/
+.valign:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle; }
+
+.valign img {
+  vertical-align: middle; }
+
+/*万能清除浮动法*/
+.clear {
+  zoom: 1; }
+
+.clear:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+/*a标签清除蓝色*/
+a {
+  -webkit-tap-highlight-color: transparent; }
+
+input {
+  outline: medium; }
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  outline: medium;
+  box-shadow: 0 0 4px #bbb; }
+
+body {
+  background-color: #F1F4FF; }
+
+.backhead {
+  height: 66px;
+  width: 100%;
+  position: relative;
+  background-color: #223645; }
+  .backhead img {
+    height: 100%; }
+  .backhead .back-l {
+    float: left; }
+  .backhead .back-r {
+    float: right; }
+  .backhead .admin-wrapper {
+    position: absolute;
+    height: 30px;
+    right: 20px;
+    top: 18px;
+    font-size: 0; }
+    .backhead .admin-wrapper:hover .admin-menu {
+      opacity: 1; }
+    .backhead .admin-wrapper img {
+      cursor: pointer;
+      float: left;
+      height: 100%;
+      width: 30px;
+      border-radius: 50%;
+      margin-right: 11px; }
+    .backhead .admin-wrapper .admin-name {
+      cursor: pointer;
+      float: left;
+      font-size: 14px;
+      line-height: 30px;
+      color: #fff; }
+    .backhead .admin-wrapper .admin-menu {
+      opacity: 0;
+      position: absolute;
+      left: -14px;
+      top: 48px;
+      width: 130px;
+      height: 105px;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      -ms-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .backhead .admin-wrapper .admin-menu ul {
+        padding-left: 0; }
+        .backhead .admin-wrapper .admin-menu ul li {
+          cursor: pointer;
+          font-size: 14px;
+          width: 100%;
+          height: 35px;
+          background-color: #2e4050;
+          color: #9CA0AA;
+          text-align: center;
+          line-height: 35px;
+          -webkit-transition: .6s;
+          -moz-transition: .6s;
+          -ms-transition: .6s;
+          -o-transition: .6s;
+          transition: .6s; }
+          .backhead .admin-wrapper .admin-menu ul li:hover {
+            background-color: #223645;
+            color: #fff; }
+
+.content-wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 80px;
+  background-color: #fff; }
+  .content-wrapper h4 {
+    color: #333; }
+  .content-wrapper .title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 600; }
+  .content-wrapper .open-time {
+    color: #666;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-weight: 500; }
+  .content-wrapper .summary-box {
+    display: flex;
+    width: 1225px;
+    margin: 0 auto;
+    justify-content: space-between; }
+    .content-wrapper .summary-box .item {
+      width: 180px;
+      height: 100px;
+      background: #C2D2FF;
+      border-radius: 10px;
+      box-shadow: 0 3px 5px #e5e5e5; }
+      .content-wrapper .summary-box .item p {
+        text-align: center; }
+        .content-wrapper .summary-box .item p:nth-child(1) {
+          padding-top: 20px;
+          font-size: 18px; }
+        .content-wrapper .summary-box .item p:nth-child(2) {
+          font-size: 30px; }
+  .content-wrapper .total-amount-box {
+    width: 1225px;
+    margin: 0 auto;
+    padding-top: 50px; }
+    .content-wrapper .total-amount-box > h4 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px; }
+    .content-wrapper .total-amount-box .filter-box .filter-date button {
+      width: 127px;
+      height: 38px;
+      margin-right: 10px;
+      font-size: 16px;
+      background: #eee; }
+      .content-wrapper .total-amount-box .filter-box .filter-date button.active {
+        background: #C2D2FF; }
+    .content-wrapper .total-amount-box .filter-box .filter-type {
+      padding-top: 10px; }
+      .content-wrapper .total-amount-box .filter-box .filter-type > select {
+        width: 127px;
+        height: 38px;
+        font-size: 16px;
+        background: #eee; }
+    .content-wrapper .total-amount-box .chart-box {
+      overflow: hidden;
+      padding-top: 20px; }
+      .content-wrapper .total-amount-box .chart-box .chart-zhexian {
+        float: left;
+        width: 70%;
+        height: 500px; }
+      .content-wrapper .total-amount-box .chart-box .chart-shanxing {
+        float: right;
+        width: 28%;
+        height: 500px; }
+  .content-wrapper .pay-box {
+    width: 1225px;
+    margin: 0 auto;
+    padding-top: 50px; }
+    .content-wrapper .pay-box > h4 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px; }
+    .content-wrapper .pay-box .filter-box .filter-date button {
+      width: 127px;
+      height: 38px;
+      margin-right: 10px;
+      font-size: 16px;
+      background: #eee; }
+      .content-wrapper .pay-box .filter-box .filter-date button.active {
+        background: #C2D2FF; }
+    .content-wrapper .pay-box .filter-box .filter-type {
+      padding-top: 10px; }
+      .content-wrapper .pay-box .filter-box .filter-type > select {
+        width: 127px;
+        height: 38px;
+        font-size: 16px;
+        background: #eee; }
+    .content-wrapper .pay-box .chart-box {
+      overflow: hidden;
+      padding-top: 20px; }
+      .content-wrapper .pay-box .chart-box .chart-zhexian {
+        float: left;
+        width: 70%;
+        height: 500px; }
+      .content-wrapper .pay-box .chart-box .chart-shanxing {
+        float: right;
+        width: 28%;
+        height: 500px; }
+  .content-wrapper .user-box {
+    width: 1225px;
+    margin: 0 auto;
+    padding-top: 50px;
+    /*.chart-total-box {
+      overflow: hidden;
+      padding-top: 20px;
+      > h5 {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .chart-zhexian {
+        float: left;
+        width: 70%;
+        height: 500px;
+        background: #00c1de;
+      }
+      .chart-shanxing {
+        float: right;
+        width: 28%;
+        height: 500px;
+        background: #00c1de;
+      }
+    }*/ }
+    .content-wrapper .user-box > h4 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px; }
+    .content-wrapper .user-box .filter-box .filter-date button {
+      width: 127px;
+      height: 38px;
+      margin-right: 10px;
+      font-size: 16px;
+      background: #eee; }
+      .content-wrapper .user-box .filter-box .filter-date button.active {
+        background: #C2D2FF; }
+    .content-wrapper .user-box .chart-add-box {
+      overflow: hidden;
+      padding-top: 20px;
+      /* .chart-shanxing {
+         float: right;
+         width: 28%;
+         height: 500px;
+         background: #00c1de;
+       }*/ }
+      .content-wrapper .user-box .chart-add-box > h5 {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px; }
+      .content-wrapper .user-box .chart-add-box .chart-zhexian {
+        float: left;
+        width: 100%;
+        height: 700px; }
+  .content-wrapper .map-box {
+    width: 1225px;
+    margin: 0 auto;
+    padding-top: 50px;
+    overflow: hidden; }
+    .content-wrapper .map-box > h4 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px; }
+    .content-wrapper .map-box .post-chart-box {
+      height: 700px;
+      width: 75%;
+      float: left; }
+    .content-wrapper .map-box .post-chart-right {
+      height: 700px;
+      width: 23%;
+      float: right; }
+      .content-wrapper .map-box .post-chart-right .filter-date button {
+        width: 127px;
+        height: 38px;
+        margin-right: 10px;
+        font-size: 16px;
+        background: #eee; }
+        .content-wrapper .map-box .post-chart-right .filter-date button.active {
+          background: #C2D2FF; }
+  .content-wrapper .hot-product-box {
+    width: 1225px;
+    margin: 0 auto;
+    padding-top: 50px; }
+    .content-wrapper .hot-product-box > h4 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px; }
+    .content-wrapper .hot-product-box .filter-box .filter-date button {
+      width: 127px;
+      height: 38px;
+      margin-right: 10px;
+      font-size: 16px;
+      background: #eee; }
+      .content-wrapper .hot-product-box .filter-box .filter-date button.active {
+        background: #C2D2FF; }
+    .content-wrapper .hot-product-box .chart-box {
+      overflow: hidden;
+      padding-top: 20px; }
+      .content-wrapper .hot-product-box .chart-box table {
+        width: 100%;
+        text-align: left; }
+        .content-wrapper .hot-product-box .chart-box table thead tr {
+          background: #eee !important; }
+        .content-wrapper .hot-product-box .chart-box table tr {
+          height: 30px; }
+          .content-wrapper .hot-product-box .chart-box table tr:hover {
+            background: #eee; }
+          .content-wrapper .hot-product-box .chart-box table tr td, .content-wrapper .hot-product-box .chart-box table tr th {
+            padding-left: 5px; }
+  .content-wrapper .seller-income-box {
+    width: 1225px;
+    margin: 0 auto;
+    padding-top: 50px; }
+    .content-wrapper .seller-income-box > h4 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px; }
+    .content-wrapper .seller-income-box .filter-box .filter-date button {
+      width: 127px;
+      height: 38px;
+      margin-right: 10px;
+      font-size: 16px;
+      background: #eee; }
+      .content-wrapper .seller-income-box .filter-box .filter-date button.active {
+        background: #C2D2FF; }
+    .content-wrapper .seller-income-box .chart-box {
+      overflow: hidden;
+      padding-top: 20px; }
+      .content-wrapper .seller-income-box .chart-box table {
+        width: 100%;
+        text-align: left; }
+        .content-wrapper .seller-income-box .chart-box table thead tr {
+          background: #eee !important; }
+        .content-wrapper .seller-income-box .chart-box table tr {
+          height: 30px; }
+          .content-wrapper .seller-income-box .chart-box table tr:hover {
+            background: #eee; }
+          .content-wrapper .seller-income-box .chart-box table tr td, .content-wrapper .seller-income-box .chart-box table tr th {
+            padding-left: 5px; }
+
+/*# sourceMappingURL=huiFangData.css.map */
